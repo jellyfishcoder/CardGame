@@ -20,7 +20,10 @@ public class Deck {
 		return cards.remove((int) (cards.size() - 1));
 	}
 	public void insertCard(Card card) {
-		cards.add(card);
+		cards.add((int) (Math.random() * cards.size()), card);
+	}
+	public void insertCard(int i, Card card) {
+		cards.add(i, card);
 	}
 	public int size() {
 		return cards.size();

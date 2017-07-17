@@ -12,9 +12,9 @@ public class CardGame {
 			System.out.println("Card:");
 			System.out.println("\tSuite: " + draw.suite);
 			System.out.println("\tValue: " + draw.value);
+			System.out.println("\tColor: " + draw.getColor());
 		}
-		System.out.println("Deck:");
+		System.out.println("Deck: ");
+		System.out.println("\tSize: " + deck.size());
 	}
-	int value;
-	String suit;
 }
